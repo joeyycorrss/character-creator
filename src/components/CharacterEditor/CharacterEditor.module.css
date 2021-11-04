@@ -4,10 +4,13 @@
 }
 
 .maxWidthWrapper {
+  width: 1024px;
+  position: relative;
 }
 
 .header {
   padding-bottom: 64px;
+  width: 65%;
 }
 
 .title {
@@ -24,7 +27,54 @@
 }
 
 .characterWrapper {
+  min-height: 500px;
+  position: fixed;
+  top: 50px;
+  left: 60%;
 }
 
 .controlColumn {
+  width: 50%;
+}
+
+.bar {
+  height: 40%;
+  width: 100%;
+  background-color: hsl(195deg, 20%, 86%);
+  position: fixed;
+  bottom: 0;
+}
+
+@media (max-width: 810px) {
+  .maxWidthWrapper {
+    width: 100vw;
+    position: relative;
+  }
+
+  .header {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .title {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .characterWrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    padding-inline-start: 50px;
+  }
+
+  .controlColumn {
+    width: 100%;
+    overflow: auto;
+    display: -webkit-inline-box;
+    position: absolute;
+    top: 75%;
+  }
+  
 }
